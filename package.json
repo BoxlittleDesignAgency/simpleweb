@@ -1,0 +1,13 @@
+{
+ "name":"simpleweb",
+ "version": "1.0.0",
+ "description": "Simple Express App",
+ "main": "index.js",
+ "author": "Demola Adebayo",
+ "scripts": {
+   "start": "node index.js"
+ },
+ "dependencies": {
+   "express": "*"
+ }
+}

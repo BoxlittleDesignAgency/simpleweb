@@ -5,9 +5,14 @@
  "main": "index.js",
  "author": "Demola Adebayo",
  "scripts": {
-   "start": "node index.js"
+   "start": "node index.js",
+   "test": "mocha"
  },
  "dependencies": {
-   "express": "*"
+   "express": "*",
+   "mysql":"*"
+ }
+ "devDependencies": {
+    "mocha": "*"
  }
 }

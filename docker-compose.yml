@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+    web:
+     stdin_open: true
+     build:
+       context: .
+       dockerfile: Dockerfile.dev
+     environment:
+         - CHOKIDAR_USEPOLLING=true
+     volumes:
+         - /app/node_modules
+         - .:/app
+     ports:
+         - '3000:3000'
+
+# docker-compose down && docker-compose up --build
+# docker run -it -p 3000:3000 -v /app/node_modules  -v $(pwd):/app -e CHOKIDAR_USEPOLLING=true ademoladebayo/frontend

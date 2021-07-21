@@ -1,0 +1,11 @@
+language: generic
+sudo: required
+services:
+  - docker
+
+
+before_install:
+  - docker build -t ademoladebayo/docker-react-workflow -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true ademoladebayo/docker-react-workflow npm run test

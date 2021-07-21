@@ -18,9 +18,14 @@ function App() {
           Learn React
         </a>
       </header>
-      <p>
-       Hi there! Welcome to the greatest resource ever.
-      </p>
+      <div className="App-intro">
+        <p>
+          Hi there! Welcome to the greatest resource ever.
+        </p>
+        <p>
+          I was added on the Feature branch
+        </p>
+      </div>
     </div>
   );
 }
